@@ -1,26 +1,22 @@
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
-</style>
-
 html
 {
     box-sizing: border-box;
     font-size:16px;
-    
+
 }
 .header
 {
     position: relative;
     width:100%;
     overflow: hidden;
-    
-      
-    
+
+
+
 }
 /*---------------------------------------------------------------------------------navbar-start--------------------------------------------------------------------------------*/
 .navbar
 {
-   
+
     display: flex;
     justify-content: center;
     padding: 20px 30px !important;
@@ -29,7 +25,7 @@ html
     z-index: 9;
     top:0px;
     width: 100%;
-    
+
 }
 
 
@@ -48,12 +44,12 @@ html
     margin:0 auto;
     display: block;
     text-align: center;
-    
+
 }
 .navbar-brand
 {
     margin: 0 20px !important;
-    
+
 }
 .navbar.sticky
 {
@@ -74,14 +70,14 @@ html
     }
     to
     {
-       opacity: 1;
-       -webkit-transform: none;
-       -o-transform: none;
+        opacity: 1;
+        -webkit-transform: none;
+        -o-transform: none;
     }
 }
 .navbar.sticky a{
     color: #18191d;
- 
+
 }
 .brand
 {
@@ -95,7 +91,7 @@ html
 /*---------------------------------------------------------------------------------main-start--------------------------------------------------------------------------------*/
 .main
 {
-   
+
     position: relative;
     overflow: hidden;
 }
@@ -121,7 +117,7 @@ video#herovide
 {
     position: relative;
     bottom: 7px;
-    
+
 }
 .vidContent{
     position: absolute;
@@ -137,7 +133,7 @@ video#herovide
     font-size: 80px;
     font-weight: bold;
     letter-spacing: 2px;
-    
+
 }
 .vidContent p
 {
@@ -158,8 +154,8 @@ video#herovide
     border-radius: 50px;
     animation: shadow-pulse 2s infinite;
     text-transform: uppercase;
-    
-    
+
+
 }
 #vidBtn:hover
 {
@@ -167,7 +163,7 @@ video#herovide
     color:black;
     animation: none;
     text-decoration: none;
-    
+
 }
 .social-icons a
 {
@@ -194,7 +190,7 @@ ul.social-icons.list-inline
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px;
-    
+
 }
 @keyframes shadow-pulse
 {
@@ -202,7 +198,7 @@ ul.social-icons.list-inline
     {
         box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
     }
-    
+
     100%
     {
         box-shadow: 0 0 0 20px rgba(0,0,0,0.2);
@@ -233,7 +229,7 @@ ul.social-icons.list-inline
     transform: scale(1.5);
     cursor: zoom-in;
 }
-img
+.img-wrapper img
 {
     width: 100%;
     height: auto;
@@ -257,7 +253,7 @@ img
 {
     position: static;
     padding-top:30px;
-    
+
 }
 #about-us .carousel-indicators li
 {
@@ -276,12 +272,12 @@ img
 {
     background-image: url(../img/right-arrow.png) !important;
     padding: 25px;
-    
+
 }
 #about-us .carousel-control-next,
 #about-us .carousel-control-prev
 {
-    
+
     width: auto !important;
 }
 #about-us .carousel-control-next
@@ -311,7 +307,7 @@ h4.text-dark
 {
     font-family:'Oswald', sans-serif;
     font-size:21px;
-    
+
 }
 p.text-secondary
 {
@@ -338,7 +334,7 @@ p.text-secondary
         margin-top: 10px;
         height:20px;
     }
-    
+
 }
 /*---------------------------------------------------------------------------------media--------------------------------------------------------------------------------*/
 @media only screen and (max-width:1152px) {
@@ -472,7 +468,7 @@ p.text-secondary
     }
     .nav-logo
     {
-    height: 25px !important;
+        height: 25px !important;
     }
 }
 /*---------------------------------------------------------------------------------media--------------------------------------------------------------------------------*/
@@ -498,43 +494,43 @@ p.text-secondary
         margin-right:30px;
     }
 
-.vidContent{
-    position: absolute;
-    top:160px;
-    color: #f1f1f1;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
-.vidContent h1
-{
-    font-family: 'Oswald', sans-serif;
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    max-width: 90%;
+    .vidContent{
+        position: absolute;
+        top:160px;
+        color: #f1f1f1;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .vidContent h1
+    {
+        font-family: 'Oswald', sans-serif;
+        font-size: 70px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        max-width: 90%;
 
-}
-.vidContent p
-{
-    font-family: 'Roboto Condensed', sans-serif;
-    max-width: 70%; 
-}
-#vidBtn
-{
-    font-family: 'Roboto Condensed', sans-serif;
-    display: inline-block;
-    font-size:16px;
-    padding: 15px 40px;
-    border: none;
-    background: white;
-    color:#333;
-    cursor: pointer;
-    margin-top:18px;
-    border-radius: 50px;
-    animation: shadow-pulse 2s infinite;
-    text-transform: uppercase;
+    }
+    .vidContent p
+    {
+        font-family: 'Roboto Condensed', sans-serif;
+        max-width: 70%; 
+    }
+    #vidBtn
+    {
+        font-family: 'Roboto Condensed', sans-serif;
+        display: inline-block;
+        font-size:16px;
+        padding: 15px 40px;
+        border: none;
+        background: white;
+        color:#333;
+        cursor: pointer;
+        margin-top:18px;
+        border-radius: 50px;
+        animation: shadow-pulse 2s infinite;
+        text-transform: uppercase;
 
 
-}
+    }
 }
