@@ -154,6 +154,8 @@ video#herovide
     border-radius: 50px;
     animation: shadow-pulse 2s infinite;
     text-transform: uppercase;
+    font-weight: bold;
+
 
 
 }
@@ -163,7 +165,7 @@ video#herovide
     color:black;
     animation: none;
     text-decoration: none;
-
+    
 }
 .social-icons a
 {
@@ -206,6 +208,96 @@ ul.social-icons.list-inline
 
 }
 /*---------------------------------------------------------------------------------main-end--------------------------------------------------------------------------------*/
+
+/*---------------------------------------------------------------------------------about-us-start--------------------------------------------------------------------------------*/
+#about-us
+{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(255,255,255,0.7)),url(../img/phoyo.jpg);
+    height: 100%;
+   
+}
+#contents .title
+{
+    margin-top: 80px;
+}
+#about-us .carousel-indicators
+{
+    position: static;
+    padding-top:30px;
+    margin-bottom: 80px;
+
+}
+#about-us .carousel-indicators li
+{
+    background-color:black;
+    width:12px;
+    height: 12px;
+    margin-left: 5px;
+    
+
+}
+.carousel-control-prev-icon
+{
+    background-image: url(../img/left-arrow.png) !important;
+    padding: 25px;
+}
+.carousel-control-next-icon
+{
+    background-image: url(../img/right-arrow.png) !important;
+    padding: 25px;
+
+}
+#about-us .carousel-control-next,
+#about-us .carousel-control-prev
+{
+
+    width: auto !important;
+}
+#about-us .carousel-control-next
+{
+    right:-35px;
+}
+#about-us .carousel-control-prev
+{
+    left:-35px;
+}
+#contents h3
+{
+    font-family:'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 600;
+    color:#333333 !important;
+    text-align: center;
+    margin-top: 35px;
+    
+}
+p.lead
+{
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:15px;
+    color:#f7cc4b !important;
+    font-weight:300;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+h4.text-dark
+{
+    font-family:'Oswald', sans-serif;
+    font-size:21px;
+
+}
+p.text-secondary
+{
+    font-family:'Roboto Condensed', sans-serif;
+    font-size:14px;
+    color:darkgray;
+
+}
+
+/*---------------------------------------------------------------------------------about-us-end--------------------------------------------------------------------------------*/
 #work h3
 {
     font-family: 'Oswald', sans-serif;
@@ -213,8 +305,8 @@ ul.social-icons.list-inline
     font-size:36px;
     font-weight: 600;
     color:#333333 !important;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 .img-wrapper
@@ -243,80 +335,337 @@ ul.social-icons.list-inline
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-/*---------------------------------------------------------------------------------about-us-start--------------------------------------------------------------------------------*/
-#about-us
+/*--------------------------------------*/
+#team
 {
-    margin-top:30px;
-    margin-bottom: 30px;
+    text-align: center;
+    color: #333333;
+    padding-top: 50px;
+    background-color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    
 }
-#about-us .carousel-indicators
+#team h5
 {
-    position: static;
-    padding-top:30px;
-
+    font-size: 1.20rem;
+    font-weight: 599;
+    margin-bottom: 1.5rem;
+    color:#ff1737;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
 }
-#about-us .carousel-indicators li
+#team h2
 {
-    background-color:black;
-    width:12px;
+    font-size:2.5rem;
+    text-transform: uppercase;
+    font-weight: 599;
+    color:#333333;
+    line-height:1.2;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    
+}
+#team p.desc
+{
+    max-width: 950px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+ul, ol
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;  
+}
+a:hover{
+    text-decoration: none;
+    
+}
+.designation
+{
+    font-size: 17px;
+    
+}
+.team-social li
+{
+   display: inline-block; 
+}
+.team-social li a
+{
+   font-size: 14px;
+    color:#18191d;
+    height: 38px;
+    width: 38px;
+    line-height: 40px;
+    display: inline-block;
+    margin: 0;
+    border:1px solid transparent;
+    border-radius: 50%;
+}
+.team-img
+{
+    position: relative;
+    
+}
+.team-social .white-bg
+{
+    background-color:white;
+}
+.team-coverflow
+{
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    width:100%;
+    max-width: 700px;
+    background: white;
+}
+.team-coverflow .team-text
+{
+    text-align: center;
+    font-size: 14px;
+    padding: 2rem 0 2.5rem 0;
+    
+}
+.team-coverflow .team-text h4
+{
+    font-size: 1.7rem;
+}
+.swiper-slide-active .team-coverflow:hover .team-box-content
+{
+    opacity: 1;
+    visibility: visible;
+    border-radius: 0;
+    bottom: 0;
+    
+}
+.team-box-content
+{
+    background-color: #f1c30f;
+    position: absolute;
+    text-align: center;
+    width:100%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px 0;
+    bottom: -20%;
+    z-index: 1;
+    transition: all linear 0.4s;
+}
+.team-coverflow .team-img
+{
+   
+    width: 100%
+}
+.swiper-slide-active .team-coverflow:hover img
+{
+    transition: scale(1.1);
+}
+.team-progress
+{
+    padding-bottom: 1rem;
+    
+}
+.team-progress .progress-item:not(:last-child)
+{
+    margin-bottom: 1.7rem;
+}
+.team-progress .progress
+{
     height: 12px;
-    margin-left: 5px;
-
+    margin-top: 12px;
+    overflow: hidden;
+    border-radius: 50px;
+    background-color: #eaeaea;
 }
-.carousel-control-prev-icon
+.team-progress .progress-item .count
 {
-    background-image: url(../img/left-arrow.png) !important;
-    padding: 25px;
+    font-weight: 500;
 }
-.carousel-control-next-icon
+.team-progress .progress-bar
 {
-    background-image: url(../img/right-arrow.png) !important;
-    padding: 25px;
-
+    height: 100%;
+    border-radius: 50px;
+    background-color:#f1c30f;
 }
-#about-us .carousel-control-next,
-#about-us .carousel-control-prev
+.w-82
 {
-
-    width: auto !important;
+    width: 82% !important;
 }
-#about-us .carousel-control-next
+.w-77
 {
-    right:-35px;
+    width: 77% !important;
 }
-#about-us .carousel-control-prev
+.w-93
 {
-    left:-35px;
+    width: 93% !important;
 }
-#about-us h3
+/*----*/
+#services
 {
+    background-image: url(../img/parallax4.jpg);
+    padding-top:130px;
+    padding-bottom: 130px;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+        
+}
+#services h2
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+}
+#services p
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color:white;
+    text-transform: uppercase;
+}
+#services a
+{
+    padding: 15px 30px;
+    background:transparent;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    font-size: 13px;
+    transition: all 0.5s ease-in;
+    border:2px solid white;
+}
+#services a:hover
+{
+    padding: 15px 30px;
+    background: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    color: #333;
+    font-size:13px;
+}
+#portfolio
+{
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #535353;
+    padding-top:50px;
+    overflow-x: hidden;
+    
+}
+#portfolio h5
+{
+    font-size: 16px;
+    margin-bottom: 20px;
+    color:#ff1737;
     font-family:'Oswald', sans-serif;
     text-transform: uppercase;
-    font-size: 36px;
-    font-weight: 600;
-    color:#333333 !important;
 }
-p.lead
+#portfolio h2
 {
-    font-family:'Roboto Condensed', sans-serif;
-    font-size:14px;
-    color:#f7cc4b !important;
+    font-size: 40px;
+    text-transform: uppercase;
     font-weight:bold;
-}
-h4.text-dark
-{
+    color:#18191d;
+    line-height: 1.2;
+    max-width: 650px;
+    margin: 0 auto 20px;
     font-family:'Oswald', sans-serif;
-    font-size:21px;
-
+        
 }
-p.text-secondary
+#portfolio .title
 {
-    font-family:'Roboto Condensed', sans-serif;
-    font-size:14px;
-    color:darkgray;
-
+    margin-top: -45px;
 }
-/*---------------------------------------------------------------------------------about-us-end--------------------------------------------------------------------------------*/
+#portfolio .title p.desc
+{
+    max-width: 950px;
+    text-align: center;
+    margin:0 auto 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#portfolio .cbp-filter-style:after
+{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #f1c30f;
+    position: relative;
+    left:12px;
+    top:-2.5px;
+    transform: rotate(45deg);
+}
+#portfolio .cbp-l-filters-alignCenter
+{
+    margin-bottom: 40px;
+}
+#portfolio .cbp-l-filters-alignCenter .cbp-filter-item-active
+{
+    color:#f1c30f !important;
+}
+#portfolio .cbp-l-filters-alignCenter .cbp-filter-counter
+{
+    background-color:#f1c30f !important;
+}
+#portfolio .cbp-l-filters-alignCenter .cbp-filter-counter:after
+{
+    border-top:4px solid #f1c30f;
+}
+#portfolio .cbp-l-filters-alignCenter .cbp-filter-item
+{
+    color:#18191d;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#portfolio .cbp-caption-zoom .cbp-caption-activeWrap
+{
+    opacity:0;
+    top:5%;
+    left:5%;
+    bottom: 5%;
+    visibility: hidden;
+    z-index: 1;
+    background: rgba(255,255,255,0.88);
+    transition: all 0.4s cubic-bezier(0.57, 0.21, 0.79, 1.25);
+}
+#portfolio .cbp-caption-active .cbp-caption-activeWrap
+{
+    background: rgba(255,255,255,0.88);
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    height: 90%;
+}
+#portfolio .cbp-item:hover .cbp-caption-activeWrap
+{
+    top:5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    transition: all 0.4s cubic-bezier(0.57, 0.21, 0.79, 1.25);
+    
+    
+}
 /*---------------------------------------------------------------------------------media--------------------------------------------------------------------------------*/
 @media only screen and (max-width:1300px) {
 
