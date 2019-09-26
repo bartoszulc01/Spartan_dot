@@ -1,52 +1,101 @@
-$(document).ready(function(){
-    
+(function($, window, document, undefined) {
+    'use strict';
 
-$(window).scroll(function(){
-    var sc=$(window).scrollTop();
-    if(sc>100){
-        $(".navbar").addClass("sticky");
-    }
-    else{
-        $(".navbar").removeClass("sticky");
-    }
-        
-    
-    });
-   /*if($(".swiper-container").hasClass("team-member-slider")){
-        var swiper = new Swiper('.swiper-container',{
-            slidesPerView:3,
-            allowTouchMove:true,
-            loop:true,
-            centeredSlides:true,
-            slideToclickedslide:true,
-            effect:"coverflow",
-            grabcursor:true,
-            autoplay:false,
-            navigation:{
-                nextEl:'.swiper-button-next',
-                prevEl:'.swiper-button-prev',
-            },
-            coverflow:{
-                rotate:0,
-                stretch:100,
-                depth:200,
-                modifier:1,
-                slideShadows:false
-            },
-            breakpoints:{
-                767:{
-                    slidesPerView:1,
-                    centeredSlides:false,
-                    effect:"slide",
-                }
+    // init cubeportfolio
+    $('#js-grid-mosaic').cubeportfolio({
+        filters: '#js-filters-mosaic, #js-filters-mosaic-cat1, #js-filters-mosaic-cat2, #js-filters-mosaic-cat3, #js-filters-mosaic-cat4, #js-filters-mosaic-cat5',
+        layoutMode: 'mosaic',
+        sortToPreventGaps: true,
+        mediaQueries: [{
+            width: 1500,
+            cols: 5,
+        }, {
+            width: 1100,
+            cols: 4,
+        }, {
+            width: 800,
+            cols: 3,
+        }, {
+            width: 480,
+            cols: 2,
+            options: {
+                caption: '',
+                gapHorizontal: 15,
+                gapVertical: 15,
             }
-        }); 
-    } */
-    $("#work").magnificPopup({
-        delegate:'a',
-        type:'image',
-        gallery:{
-            enabled:true
-        }
-    })
-});
+        }],
+        defaultFilter: '*',
+        animationType: 'quicksand',
+        gapHorizontal: 0,
+        gapVertical: 0,
+        gridAdjustment: 'responsive',
+        caption: 'zoom',
+        displayType: 'sequentially',
+        displayTypeSpeed: 100,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+
+        plugins: {
+            loadMore: {
+                element: '#js-loadMore-mosaic',
+                action: 'click',
+                loadItems: 3,
+            }
+        },
+    });
+})(jQuery, window, document);
+
+(function($, window, document, undefined) {
+    'use strict';
+
+    // init cubeportfolio
+    $('#js-grid-mosaic-flat').cubeportfolio({
+        filters: '#js-filters-mosaic-flat',
+        layoutMode: 'mosaic',
+        sortToPreventGaps: true,
+        mediaQueries: [{
+            width: 1500,
+            cols: 6,
+        }, {
+            width: 1100,
+            cols: 4,
+        }, {
+            width: 800,
+            cols: 3,
+        }, {
+            width: 480,
+            cols: 2,
+            options: {
+                caption: '',
+                gapHorizontal: 15,
+                gapVertical: 15,
+            }
+        }],
+        defaultFilter: '*',
+        animationType: 'fadeOutTop',
+        gapHorizontal: 0,
+        gapVertical: 0,
+        gridAdjustment: 'responsive',
+        caption: 'fadeIn',
+        displayType: 'fadeIn',
+        displayTypeSpeed: 100,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+
+        plugins: {
+            loadMore: {
+                element: '#js-loadMore-mosaic-flat',
+                action: 'click',
+                loadItems: 3,
+            }
+        },
+    });
+})(jQuery, window, document);
