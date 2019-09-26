@@ -165,7 +165,7 @@ video#herovide
     color:black;
     animation: none;
     text-decoration: none;
-    
+
 }
 .social-icons a
 {
@@ -212,10 +212,10 @@ ul.social-icons.list-inline
 /*---------------------------------------------------------------------------------about-us-start--------------------------------------------------------------------------------*/
 #about-us
 {
-    
+
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(255,255,255,0.7)),url(../img/phoyo.jpg);
     height: 100%;
-   
+
 }
 #contents .title
 {
@@ -234,7 +234,7 @@ ul.social-icons.list-inline
     width:12px;
     height: 12px;
     margin-left: 5px;
-    
+
 
 }
 .carousel-control-prev-icon
@@ -271,7 +271,7 @@ ul.social-icons.list-inline
     color:#333333 !important;
     text-align: center;
     margin-top: 35px;
-    
+
 }
 p.lead
 {
@@ -343,7 +343,7 @@ p.text-secondary
     padding-top: 50px;
     background-color: #fff;
     font-family: 'Roboto Condensed', sans-serif;
-    
+
 }
 #team h5
 {
@@ -354,7 +354,7 @@ p.text-secondary
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
+
 }
 #team h2
 {
@@ -367,7 +367,7 @@ p.text-secondary
     margin: 0 auto 1.5rem;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
-    
+
 }
 #team p.desc
 {
@@ -375,7 +375,7 @@ p.text-secondary
     margin: 0 auto;
     padding-bottom: 40px;
     font-family: 'Roboto Condensed', sans-serif;
-    
+
 }
 ul, ol
 {
@@ -385,20 +385,20 @@ ul, ol
 }
 a:hover{
     text-decoration: none;
-    
+
 }
 .designation
 {
     font-size: 17px;
-    
+
 }
 .team-social li
 {
-   display: inline-block; 
+    display: inline-block; 
 }
 .team-social li a
 {
-   font-size: 14px;
+    font-size: 14px;
     color:#18191d;
     height: 38px;
     width: 38px;
@@ -411,7 +411,7 @@ a:hover{
 .team-img
 {
     position: relative;
-    
+
 }
 .team-social .white-bg
 {
@@ -431,7 +431,7 @@ a:hover{
     text-align: center;
     font-size: 14px;
     padding: 2rem 0 2.5rem 0;
-    
+
 }
 .team-coverflow .team-text h4
 {
@@ -443,7 +443,7 @@ a:hover{
     visibility: visible;
     border-radius: 0;
     bottom: 0;
-    
+
 }
 .team-box-content
 {
@@ -461,7 +461,7 @@ a:hover{
 }
 .team-coverflow .team-img
 {
-   
+
     width: 100%
 }
 .swiper-slide-active .team-coverflow:hover img
@@ -471,7 +471,7 @@ a:hover{
 .team-progress
 {
     padding-bottom: 1rem;
-    
+
 }
 .team-progress .progress-item:not(:last-child)
 {
@@ -516,7 +516,7 @@ a:hover{
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
-        
+
 }
 #services h2
 {
@@ -526,7 +526,7 @@ a:hover{
     color:white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    
+
 }
 #services p
 {
@@ -567,7 +567,7 @@ a:hover{
     color: #535353;
     padding-top:50px;
     overflow-x: hidden;
-    
+
 }
 #portfolio h5
 {
@@ -587,7 +587,7 @@ a:hover{
     max-width: 650px;
     margin: 0 auto 20px;
     font-family:'Oswald', sans-serif;
-        
+
 }
 #portfolio .title
 {
@@ -663,8 +663,8 @@ a:hover{
     width: 90%;
     height: 90%;
     transition: all 0.4s cubic-bezier(0.57, 0.21, 0.79, 1.25);
-    
-    
+
+
 }
 /*---------------------------------------------------------------------------------media--------------------------------------------------------------------------------*/
 @media only screen and (max-width:1300px) {
