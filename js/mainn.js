@@ -42,11 +42,17 @@ $(window).scroll(function(){
             }
         }); 
     } */
+   
+    $('.count').counterUp({
+        delay:10,
+        time:1000
+    });
+    
     $("#work").magnificPopup({
         delegate:'a',
         type:'image',
         gallery:{
             enabled:true
         }
-    })
+    });
 });
